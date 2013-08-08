@@ -58,7 +58,7 @@ $(document).ready(function() {
   $secondGroup.bind('move', function() {
     var $self = $(this);
     var translate = parseInt($self.attr('data-translate'), 10);
-    $self.css('-webkit-transform', 'translateY('+translate+'px)');
+    $self.css('transform', 'translateY('+translate+'px)');
     $self.attr('data-translate', translate + 5);
   });
 
